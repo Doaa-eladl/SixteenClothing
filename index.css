@@ -1,0 +1,770 @@
+@import url(https://use.fontawesome.com/releases/v5.5.0/css/all.css);
+
+html{
+    height: auto;
+}
+
+body{
+    margin: 0;
+    position: relative;
+    top: -20px;
+}
+
+.mainheader{
+    width: 100vw;
+    left: 0;
+    top: 0;
+    position: absolute;
+    padding-top: 20px;
+    z-index: 10;
+}
+
+.scrollingheader{
+    width: 100vw;
+    left: 0;
+    top: 0;
+    position: fixed;
+    padding-top: 0px;
+    z-index: 10;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 80px;
+    /*position: sticky;*/
+    margin:0px;
+    background-color: #232323;
+}
+
+nav.scrollingheader{
+    background-color: #fff;
+}
+
+.logo{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 23.6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+nav.scrollingheader .logo{
+    color: black;
+}
+
+nav h1{
+    margin: 0px;
+    padding: 0px;
+    font-size: inherit;
+    justify-self: end;
+}
+
+nav em{
+    color: #f33f3f;
+    font-style: normal;
+}
+
+.hamburger{
+    background-color: white;
+    border: 0;
+    padding: 6px 19px;
+    color: #f33f3f;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0px 4vw 0px 0px;
+    display: none;
+}
+
+.hamburger:focus{
+    outline: none;
+}
+
+.listmobview{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    margin: 0px 24px 0px 0px;
+    padding: 0px;
+    height: 80px;
+}
+
+.listmobview li{
+    margin: 0px 15px;
+    padding: 32px 0px;
+}
+
+.listmobview li a{
+    font-size: 15px;
+    padding:8px 8px 0px 8px;
+    margin-top: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .5px;
+    border-bottom: 3px;
+    color: #fff;
+}
+
+nav.scrollingheader .listmobview li a{
+    color: black;
+}
+
+.listmobview li:first-child{
+    border-bottom: 3px solid #f33f3f;
+    padding-bottom: 25px;
+}
+
+.listmobview li a:hover{
+    border-bottom: 3px solid #f33f3f;
+    transition: .5s;
+    padding-bottom: 25px;
+}
+
+.listmobview li:first-child :hover{
+    border-bottom: none;
+    transition: none;
+}
+
+.introsection{
+    background-image: url(mainpackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    padding-top: 20px;
+}
+
+.background2{
+    background-image: url(slide_02.jpg);
+}
+
+.background3{
+    background-image: url(slide_03.jpg);
+}
+
+.introsection h2{
+    color: #f33f3f;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.introsection h1{
+    color: #fff;
+    font-size: 62px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.tranzetionbuttons{
+    position: absolute;
+    top: 24.7%;
+    z-index: 0;
+}
+
+.tranzetionbutton1,
+.tranzetionbutton2,
+.tranzetionbutton3{
+    color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0px 10px;
+    opacity: .5;
+    padding: 0px;
+    border:0px;
+}
+
+.tranzetionbutton1:hover,
+.tranzetionbutton2:hover,
+.tranzetionbutton3:hover{
+    cursor: pointer;
+}
+
+.tranzetionbutton1:focus,
+.tranzetionbutton2:focus,
+.tranzetionbutton3:focus{
+    outline: none;
+}
+
+/*عندي مشكله مش عارفه اخليه يمشي يمين وكمان مشكله ف حدود كده مش بتتشال */
+.tranzetionbutton1act{
+    opacity: 1;
+    background-color: #fff;
+    border:none;
+}
+
+.tranzetionbutton2act{
+    opacity: 1;
+    background-color: #fff;
+}
+
+.tranzetionbutton3act{
+    opacity: 1;
+    background-color: #fff;
+}
+/*
+.productsection{
+    display: flex;
+    justify-content: center;
+}
+
+.sectionintro{
+    display: flex;
+    justify-content: space-between;
+}*/
+
+.productssection{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionheader{
+    width: 71.5vw;
+    display: flex;
+    margin-top: 100px;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom:1px solid #eee;
+}
+
+.sectiontitle{
+    font-size: 28px;
+    font-weight: 400;
+    color: #1e1e1e;
+    margin: 0px 0px 15px 0px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.moreinfolink{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    color: #f33f3f;
+    text-decoration: none;
+    margin: 0px 0px 15px 0px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.productsblocks{
+    max-width: 71.5vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(290px,100fr));
+    margin: 60px 0px 0px 0px;
+    grid-gap: 15px;
+}
+
+.productsblock{
+    border:1px solid #eee;
+    margin: 0px 0px 30px 0px;
+    height: fit-content;
+}
+
+.productphoto{
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+}
+
+.productsinfo{
+    display: flex;
+    margin: 30px;
+    flex-direction: column;
+}
+
+.producttitleinfo{
+    display: flex;
+    margin: 0px 0px 20px 0px;
+    justify-content: space-between;
+}
+
+.producttitle{
+    margin: 0px;
+    color:#1a6692;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.productprice{
+    margin: 0px;
+    align-self: center;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 18px;
+    color: #121212;
+    font-family: 'Poppins', sans-serif;
+}
+
+.productDescription{
+    margin: 0px 0px 20px 0px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #4a4a4a;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+    width: 232px;
+}
+
+.reviewstars{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.reviewstar{
+    display: inline-block;
+}
+
+.reviewstar i{
+    color: #f33f3f;
+    font-size: 14px;
+}
+
+.review{
+    display: flex;
+    justify-content: space-between;
+}
+
+.review p{
+    margin: 0;
+    color: #f33f3f;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.moreaboutproductsection{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 71.5vw;
+    margin: 50px auto 60px auto;
+}
+
+.moreaboutproductsection h2{
+    font-size: 28px;
+    font-weight: 400;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: 0px;
+    color: #1e1e1e;
+    width: 71.5vw;
+    border-bottom:1px solid #eee;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.alldetels{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 71.5vw;
+    margin: 60px 0px 0px 0px;
+}
+
+.alldetels div{
+    width: 36vw;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.alldetels div h3{
+    color: #1a6692;
+    /*مش بيطلع الخط شبهه ف كبرته زياده 2px*/
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px 0px 20px 0px;
+}
+
+.alldetels div p{
+    margin: 0px 0px 25px 0px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #4a4a4a;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+    width: 31vw;
+}
+
+.alldetels div p a{
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.alldetels div ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: inside;
+}
+
+.alldetels div li{
+    font-size: 14px;
+    color: #4a4a4a;
+    font-weight: 300;
+    transition: all .3s;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px 0px 10px 0px;
+    list-style-type: square;
+}
+
+.alldetels div ul li :hover{
+    cursor: pointer;
+    color: #f33f3f;
+}
+
+.alldetels div li a{
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+.alldetels>div button a{
+    background-color: #f33f3f;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 300;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.3s;
+    border: none;
+    width: 114.23px;
+    height: 20.8px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.alldetels>div button {
+    border: none;
+    background-color: white;
+    height: fit-content;
+    margin: 20px 0px 0px 0px;
+    height: 42px;
+}
+
+.alldetels>div>button :hover{
+    background-color: black;
+}
+
+.yourownbussinesection{
+    width: 71.5vw;
+    padding-top: 60px;
+    padding-left: 0px;
+    padding-bottom: 60px;
+    padding-right: 0px;
+    border-bottom: 1px solid #eee;
+    border-top:1px solid #eee;
+    margin: 0px auto;
+}
+
+.yourownbussinesection>div{
+    width: 66.5vw;
+    height: 90px;
+    display: flex;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    padding: 30px;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+.yourownbussinesection div div{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    height: fit-content;
+}
+
+.yourownbussinesection div div h4{
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: #1a6692;
+    margin: 0px 0px 15px 0px;
+}
+
+.yourownbussinesection div div h4 em{
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.yourownbussinesection div div p{
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #4a4a4a;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+.yourownbussinesection>div button a{
+    margin: 12px 0px 0px 0px;
+    background-color: #f33f3f;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 300;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.3s;
+    border: none;
+    width: 138.41px;
+    height: 20.8px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.yourownbussinesection>div button {
+    border: none;
+    background-color: #f7f7f7;
+    height: fit-content;
+}
+
+.yourownbussinesection div button :hover{
+    background-color: black;
+}
+
+footer{
+    margin: 60px auto;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #4a4a4a;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer p a{
+    text-decoration: none;
+    color: #f33f3f;
+    margin: 0px 0px 0px 3px;
+}
+
+@media(max-width:990px) and (min-width:767){
+    nav{
+        justify-content: space-between;
+    }
+    .logo{
+        margin: 0px 0px 0px 4vw;
+    }
+    .listmobview{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+    .listmobview.show {
+        display: flex;
+        background-color: #fff;
+        height: auto;
+        width: 104vw;
+        position: absolute;
+        top: 100px;
+    }
+    .scrollingheader .listmobview.show{
+        top: 80px;
+    }
+    .listmobview li{
+        margin: 0px;
+        padding: 19.2px;
+        width: 100vw;
+        display: flex;
+        border-bottom:1px #eee solid;
+        justify-content: center;
+    }
+    .listmobview li a{
+        color: black;
+        padding: 0px;
+        margin: 0px;
+    }
+    .listmobview li a:hover{
+        border: none;
+        padding: 0px;
+        color: #f33f3f;
+        transition: all .5s;
+    }
+    .introsection h2{
+        position: relative;
+        top: 29px;
+    }
+    .listmobview.show li:first-child{
+        color: #f33f3f;
+        border-bottom:1px #eee solid;
+        padding: 19.2px;
+    }
+    .listmobview.show li:first-child a{
+        color: #f33f3f;
+    }
+    .introsection h1{
+        position: relative;
+        top: 32px;
+    }
+    .tranzetionbuttons {
+        top: 21%;
+    }
+    .hamburger{
+        display: block;
+    }
+    .introsection h1{
+        width: 91vw;
+        font-size: 55px;
+    }
+    .productsblocks{
+        max-width: 80vw;
+        grid-template-columns: repeat(auto-fit,minmax(215px,100fr));
+    }
+    .productDescription{
+        width: auto;
+    }
+    .review{
+        flex-direction: column;
+    }
+    .reviewstars{
+        margin: 0px 0px 5px 0px;
+    }
+}
+@media(max-width:767px){
+    nav h1{
+        margin: 0px 0px 0px 15px;
+    }
+    .hamburger{
+        display: block;
+    }
+    .listmobview{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+    .listmobview.show {
+        display: flex;
+        background-color: #fff;
+        height: auto;
+        width: 107vw;
+        position: absolute;
+        top: 100px;
+    }
+    .scrollingheader .listmobview.show{
+        top: 80px;
+    }
+    .listmobview li{
+        margin: 0px;
+        padding: 19.2px;
+        width: 100vw;
+        display: flex;
+        border-bottom:1px #eee solid;
+        justify-content: center;
+    }
+    .listmobview li a{
+        color: black;
+        padding: 0px;
+        margin: 0px;
+    }
+    .listmobview li a:hover{
+        border: none;
+        padding: 0px;
+        color: #f33f3f;
+        transition: all .5s;
+    }
+    .introsection h2{
+        position: relative;
+        top: 29px;
+    }
+    .listmobview.show li:first-child{
+        color: #f33f3f;
+        border-bottom:1px #eee solid;
+        padding: 19.2px;
+    }
+    .listmobview.show li:first-child a{
+        color: #f33f3f;
+    }
+    .introsection h1{
+        position: relative;
+        top: 32px;
+    }
+    .tranzetionbuttons {
+        top: 21%;
+    }
+    .introsection{
+        height: 69vh;
+    }
+    .introsection h1{
+        font-size: 32px;
+        font-weight: bolder;
+        letter-spacing: normal;
+    }
+    .introsection h2{
+        font-weight: bolder;
+    }
+    .tranzetionbuttons{
+        top: 8.3%;
+        z-index: 0;
+    }
+    .sectionheader{
+        width: 68vw;
+        flex-direction: column;
+    }
+    .productsblocks{
+        width: 67vw;
+    }
+    .alldetels{
+        width: 68vw;
+        flex-direction: column;
+    }
+    .alldetels div{
+        width: 64vw;
+    }
+    .alldetels div p{
+        width: 64vw;
+    }
+    .alldetels div img{
+        margin: 30px 0 0 0;
+    }
+    .yourownbussinesection>div{
+        width: 66vw;
+        flex-direction: column;
+        text-align: center;
+    }
+    .yourownbussinesection div div h4{
+        font-weight: bolder;
+    }
+    .yourownbussinesection>div button a{
+        width: 60vw;
+    }
+}
